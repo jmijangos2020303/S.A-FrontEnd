@@ -1,0 +1,118 @@
+.container{
+    background-color: #e2e2e2;
+ 
+}
+.fotoPerfil{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 15px 15px; 
+}
+
+.fotoPerfil img{
+    width: 60vw;
+    height: 60vh;
+
+}
+
+.info-perfil{
+    display: flex;
+    margin-top: 15px;
+}
+
+.fotoportada{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden
+    
+}
+
+.fotoportada img{
+   width:200px;
+}
+
+.datos-trabajador{
+    margin-left: 5%;
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones button{
+    margin: 5px 5px 20px 5px;
+}
+
+
+/* cards */
+.slide img{
+    height: 100vh;
+}
+
+.workimg{
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.container-r{
+  margin-top: 7%;
+  
+}
+
+.img-user{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid  black;
+    overflow: hidden;
+}
+
+.img-user img{
+    width: 110px;
+}
+
+.info-trabajador{
+    display: flex;
+}
+
+#informacion-trabajador{
+    margin-left: 30px;
+}
+
+#informacion-trabajador h5{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#informacion-trabajador p{
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+
+#titulo-trabajo{
+    margin-top: 30px;
+    font-size: 17px;
+}   
+
+.contenedor-card{
+    background-color: #f2f2f2;
+}
+
+.datos-trabajador h3{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.datos-trabajador h5{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(97, 97, 97);
+}
+
+.descrp{
+
+    height: 100px;
+    background-color: #f2f2f2;
+}

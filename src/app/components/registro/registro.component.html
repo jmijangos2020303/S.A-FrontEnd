@@ -1,0 +1,100 @@
+<!-- Section: Design Block -->
+
+<app-navbar></app-navbar>
+<section class="background-radial-gradient overflow-hidden">
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          El Mundo del Trabajo <br />
+          <span style="color: hsl(218, 81%, 75%)">CONTRATACIONES S.A</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+          La oportunidad es tuya solo llena nuestro formulario para empezar
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input [(ngModel)]="user.nombre" #name="ngModel" name="name" type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">Nombre Completo</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input [(ngModel)]="user.apellido" #name="ngModel" name="name" type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Apellido Completo</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="user.email" #email="ngModel" name="email" type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email / Correo Electronico</label>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input [(ngModel)]="user.telefono" #name="ngModel" name="name" type="number" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">Teléfono</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input [(ngModel)]="user.oficio" #name="ngModel" name="name" type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Oficio</label>
+                  </div>
+                </div>
+              </div>
+
+<!--
+              <div class="mb-3">
+                <select [(ngModel)]="user.rol" #name="ngModel" name="name" class="form-select" aria-label="multiple select example">
+                  <option  *ngFor="let roles of rol" [value]="roles.roles">{{roles.nombre}}</option>
+                </select>
+                <label for="Dire" class="form-label">Rol</label>
+              </div> -->
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="user.direccion" #name="ngModel" name="name" type="text" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Dirección</label>
+              </div>
+
+
+              <div class="form-outline mb-4">
+                <input [(ngModel)]="user.password" #password="ngModel" name="password" type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password / Contraseña</label>
+              </div>
+
+              <!-- Checkbox -->
+
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4" type="submit" (click)="register()">
+                Registrarse
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>¿Ya tienes cuenta?</p>
+                <a href="/login">Iniciar Sesión</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

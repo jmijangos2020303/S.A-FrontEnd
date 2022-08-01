@@ -1,0 +1,12 @@
+<header class="header">
+  <a href="" class="logo">Contrataciones </a>
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="/login">Login</a></li>
+    <li><a routerLink="/registro">Registro</a></li>
+    <li><a routerLink="">Contact</a></li>
+    <li><a routerLink="/vertrabajadores" *ngIf="_usuarioService.getIdentidad().rol==='ADMIN'">Ver Trabajadores</a></li>
+
+  </ul>
+</header>

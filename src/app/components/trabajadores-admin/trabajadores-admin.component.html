@@ -1,0 +1,40 @@
+
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Barlow:ital,wght@1,200&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,300;0,700;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<app-nvregistrado></app-nvregistrado>
+
+
+
+<!-- cars de trabajos -->
+
+<div class="container-r row justify-content-center" *ngFor="let ver of verTrabajadores">
+  <div class="contenedor-card col-7 ">
+      <div class="card mb-3">
+          <div class="workimg"><img src="../../../assets/image/work1.jpg" class="card-img-top" alt="..."> </div>
+          <div class="card-body" >
+              <div class="info-trabajador">
+                  <div class="img-user"><img src="../../../assets/image/usuarios.png" alt=""></div>
+                  <div id="informacion-trabajador">
+                      <h5 class="card-title">{{ver.oficio}}</h5>
+                      <h3>{{ver.nombre}} {{ver.apellido}}</h3>
+                      <h6>Telefono: {{ver.telefono}}</h6>
+                      <h6>Direccion: {{ver.direccion}}</h6>
+                      <h6>Email: {{ver.email}}</h6>
+
+
+
+                  </div>
+              </div>
+            <h5 class="card-title" id="titulo-trabajo"></h5>
+            <p class="card-text"id="descripcion-trabajo"></p>
+          </div>
+        </div>
+  </div>
+
+</div>
+
+

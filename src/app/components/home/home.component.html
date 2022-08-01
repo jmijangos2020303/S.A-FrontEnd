@@ -1,0 +1,74 @@
+
+<app-navbar></app-navbar>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../../assets/image/work4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Contrataciones S.A</h5>
+          <p>Los mejores profesionales y maestros de los oficios.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/image/work2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>El exito el Trabajo</h5>
+          <p>Tu oportinidad de adquirir sus servicios la encuentras con nosotros.
+          </p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../../assets/image/work3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Encuentra a los mejores para tus necesidades con nosotros
+          </h5>
+          <p>Dale la oportunidad y superaran tus espectativa</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- cars de trabajos -->
+
+    <div class="container row justify-content-center ">
+        <div class="contenedor-card col-7 "  *ngFor="let publicacion of mostrarPublicacion">
+            <div class="card mb-3">
+                <div class="workimg"><img src="../../../assets/image/work1.jpg" class="card-img-top" alt="..."> </div>
+                <div class="card-body">
+                    <div class="info-trabajador">
+                        <div class="img-user"><img src="../../../assets/image/usuarios.png" alt=""></div>
+                        <div id="informacion-trabajador">
+                            <h5 class="card-title">{{publicacion.idProp.nombre}}  {{publicacion.idProp.apellido}}</h5>
+                            <p>Oficio: {{publicacion.idProp.oficio}}</p>
+                            <p>Direccion: {{publicacion.idProp.direccion}}</p>
+                            <p>Telefono: {{publicacion.idProp.telefono}}</p>
+                        </div>
+                    </div>
+                  <h5 class="card-title" id="titulo-trabajo">{{publicacion.idProp.oficio}}</h5>
+                  <p class="card-text"id="descripcion-trabajo">{{publicacion.descripcion}}</p>
+                  <div><img id="imagePublic" src= '{{publicacion.imagenes}}' alt=""></div>
+
+
+
+                </div>
+              </div>
+        </div>
+
+    </div>
+
