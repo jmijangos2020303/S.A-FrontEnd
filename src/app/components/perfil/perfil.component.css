@@ -1,11 +1,11 @@
 .container{
     background-color: #e2e2e2;
- 
+
 }
 .fotoPerfil{
     height: 200px;
     overflow: hidden;
-    border-radius: 0px 0px 15px 15px; 
+    border-radius: 0px 0px 15px 15px;
 }
 
 .fotoPerfil img{
@@ -24,7 +24,7 @@
     height: 150px;
     border-radius: 50%;
     overflow: hidden
-    
+
 }
 
 .fotoportada img{
@@ -58,7 +58,7 @@
 
 .container-r{
   margin-top: 7%;
-  
+
 }
 
 .img-user{
@@ -94,7 +94,7 @@
 #titulo-trabajo{
     margin-top: 30px;
     font-size: 17px;
-}   
+}
 
 .contenedor-card{
     background-color: #f2f2f2;
@@ -116,3 +116,4 @@
     height: 100px;
     background-color: #f2f2f2;
 }
+

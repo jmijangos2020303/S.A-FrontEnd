@@ -6,6 +6,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { TrabajadoresAdminComponent } from './components/trabajadores-admin/trabajadores-admin.component';
+import { BusquedaOficioComponent } from './components/busqueda-oficio/busqueda-oficio.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'registro', component: RegistroComponent},
   {path: 'perfilP', component: PerfilComponent},
   {path: 'principal', component: PrincipalComponent},
-  {path: 'vertrabajadores', component: TrabajadoresAdminComponent}
+  {path: 'vertrabajadores', component: TrabajadoresAdminComponent},
+  {path: 'BusquedaOficio', component: BusquedaOficioComponent}
 
 
 

@@ -9,6 +9,7 @@ import { PublicacionesService } from 'src/app/services/publicaciones.service';
 })
 export class HomeComponent implements OnInit {
    public mostrarPublicacion
+   public buscar
 
   constructor(public _publicacion: PublicacionesService) { }
 
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit {
        this.mostrarPublicacion = respuesta.Publicaciones
     },(error)=>{
       console.log(<any>error)
-      
+
     })
   }
 

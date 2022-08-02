@@ -108,5 +108,13 @@ export class UsuarioService {
   }
 
 
+  eliminarCuenta(id):Observable<any>{
+
+    return this._http.delete(this.url+'/eliminarperfil/'+id,{headers: this.headersVariable})
+   }
+
+
+
 }
+
 

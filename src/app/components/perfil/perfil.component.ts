@@ -11,7 +11,7 @@ import { UsuarioService } from 'src/app/services/usuario.service';
   providers: [UsuarioService, PublicacionesService]
 })
 export class PerfilComponent implements OnInit {
-  
+
   public identidad
   public token
   public listadoPublicaciones
@@ -19,7 +19,7 @@ export class PerfilComponent implements OnInit {
   public editarPerfil: Usuario
 
   constructor(public _datos: UsuarioService, public _publicaciones: PublicacionesService) {
-  
+
     this.agregarpublicacion = new publicacion('',null)
     this.editarPerfil = new Usuario('','','','',0,'','','','')
     this.identidad=  this._datos.getIdentidad()
@@ -75,4 +75,23 @@ export class PerfilComponent implements OnInit {
       })
   }
 
+  eliminarperfil(id){
+    this. _datos.eliminarCuenta(id).subscribe(
+      (respuesta)=>{
+      console.log(respuesta)
+      },(error)=>{
+        console.log(<any>error)
+      }
+    )
+  }
+
+  limpiarToken(){
+    this._datos.clearToken();
+  }
+
+
 }
+
+
+
+

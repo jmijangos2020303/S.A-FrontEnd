@@ -3,13 +3,13 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
   }
-  
+
   a {
     color: #000;
   }
-  
+
   /* header */
-  
+
   .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -18,7 +18,7 @@ body {
     height: 60px;
     z-index: 3;
   }
-  
+
   .header ul {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body {
     height: 60px;
 
   }
-  
+
   .header li a {
     display: block;
     padding: 20px 20px;
@@ -37,12 +37,12 @@ body {
     height: 60px;
 
   }
-  
+
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #cfcccc;
   }
-  
+
 .logo{
    font-size: 27px;
    margin-left: 2%;
@@ -50,11 +50,11 @@ body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  
 
-  
+
+
   /* 48em = 768px */
-  
+
   @media (min-width: 48em) {
     .header li {
       float: left;
@@ -71,3 +71,15 @@ body {
       display: none;
     }
   }
+
+  #usuario{
+    margin-top: -17px;
+    width: 95px;
+  }
+
+  .buscar{
+    margin-top: 13px;
+    width: 285px;
+    left: -50px;
+    float: left;
+ }

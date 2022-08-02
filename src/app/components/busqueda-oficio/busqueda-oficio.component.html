@@ -1,0 +1,37 @@
+
+<app-navbar></app-navbar>
+
+<div class="buscar">
+  <div class="input-group m-10">
+    <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="busqueda">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+  </div>
+</div>
+
+
+
+<div class="container-r row justify-content-center" *ngFor="let ver of verTrabajadores | busqueda:busqueda">
+  <div class="contenedor-card col-7 ">
+      <div class="card mb-3">
+          <div class="workimg"><img src="../../../assets/image/work1.jpg" class="card-img-top" alt="..."> </div>
+          <div class="card-body" >
+              <div class="info-trabajador">
+                  <div class="img-user"><img src="../../../assets/image/usuarios.png" alt=""></div>
+                  <div id="informacion-trabajador">
+                      <h5 class="card-title">{{ver.oficio}}</h5>
+                      <h3>{{ver.nombre}} {{ver.apellido}}</h3>
+                      <h6>Telefono: {{ver.telefono}}</h6>
+                      <h6>Direccion: {{ver.direccion}}</h6>
+                      <h6>Email: {{ver.email}}</h6>
+
+
+
+                  </div>
+              </div>
+            <h5 class="card-title" id="titulo-trabajo"></h5>
+            <p class="card-text"id="descripcion-trabajo"></p>
+          </div>
+        </div>
+  </div>
+
+</div>

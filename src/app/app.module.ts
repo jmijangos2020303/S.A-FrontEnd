@@ -14,6 +14,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { NvregistradoComponent } from './components/nvregistrado/nvregistrado.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { TrabajadoresAdminComponent } from './components/trabajadores-admin/trabajadores-admin.component';
+import { BusquedaPipe } from './pipes/busqueda.pipe';
+import { BusquedaOficioComponent } from './components/busqueda-oficio/busqueda-oficio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TrabajadoresAdminComponent } from './components/trabajadores-admin/trab
     PerfilComponent,
     NvregistradoComponent,
     PrincipalComponent,
-    TrabajadoresAdminComponent
+    TrabajadoresAdminComponent,
+    BusquedaPipe,
+    BusquedaOficioComponent
   ],
   imports: [
     BrowserModule,

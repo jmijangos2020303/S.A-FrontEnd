@@ -44,4 +44,9 @@ export class PublicacionesService {
 
     return this._http.put(this.url + '/editarPerfil', parametros,{headers: headerconelToken})
   }
+
+  eliminarCuenta(id):Observable<any>{
+
+    return this._http.delete(this.url+'/eliminarperfil/'+id,{headers: this.headersVariable})
+   }
 }

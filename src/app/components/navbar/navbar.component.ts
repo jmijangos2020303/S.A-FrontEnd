@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
 
   public token: any;
   public identidad;
+  public buscar
 
 
   constructor(public _usuarioService: UsuarioService) {
